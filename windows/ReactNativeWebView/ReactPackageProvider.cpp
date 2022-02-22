@@ -11,7 +11,7 @@ using namespace winrt::Microsoft::ReactNative;
 namespace winrt::ReactNativeWebView::implementation {
 
 void ReactPackageProvider::CreatePackage(IReactPackageBuilder const &packageBuilder) noexcept {
-  AddAttributedModules(packageBuilder);
+  packageBuilder.AddViewManager(L"ReactWebViewManager", []() { return winrt::make<ReactWebViewManager>(); });
 }
 
 } // namespace winrt::ReactNativeWebView::implementation
