@@ -2,18 +2,23 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Midl Include="ReactPackageProvider.idl" />
+    <Midl Include="WebBridge.idl" />
+    <Midl Include="ReactWebView.idl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
     <ClCompile Include="ReactPackageProvider.cpp" />
+    <ClCompile Include="ReactWebViewManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="ReactPackageProvider.h" />
+    <ClInclude Include="ReactWebViewManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PropertySheet.props" />
+    <None Include="ReactNativeWebView.def" />
     <None Include="packages.config" />
   </ItemGroup>
 </Project>
