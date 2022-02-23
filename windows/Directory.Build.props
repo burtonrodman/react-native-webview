@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReactNative" Version="0.67.2" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.ReactNative.Css" Version="0.67.2" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.UI.Xaml" Version="2.7.0" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.Windows.CppWinRT" Version="2.0.210312.4" GeneratePathProperty="true" />
+    <PackageReference Include="ReactNative.Hermes.Windows" Version="0.10.0-ms.1" GeneratePathProperty="true" />
+  </ItemGroup>
+
+  <!-- enable NuGet TargetMonikers fallback to native -->
+  <PropertyGroup>
+    <_NuGetTargetFallbackMoniker>$(_NuGetTargetFallbackMoniker);native,Version=v0.0</_NuGetTargetFallbackMoniker>
+  </PropertyGroup>
+
+</Project>
