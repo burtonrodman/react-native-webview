@@ -170,7 +170,7 @@
         Condition="Exists('$(SolutionDir)\packages\ReactNative.Hermes.Windows\0.10.0-ms.1\build\native\ReactNative.Hermes.Windows.targets')" />
     <Import Project="$(SolutionDir)\packages\$(WinUIPackageName)\$(WinUIPackageVersion)\build\native\$(WinUIPackageName).targets"
         Condition="Exists('$(SolutionDir)\packages\$(WinUIPackageName)\$(WinUIPackageVersion)\build\native\$(WinUIPackageName).targets')" />
-    <Import Project="..\packages\Microsoft.ReactNative.0.67.2\build\native\Microsoft.ReactNative.targets"
+    <Import Project="..\packages\Microsoft.ReactNative\0.67.2\build\native\Microsoft.ReactNative.targets"
         Condition="Exists('..\packages\Microsoft.ReactNative\0.67.2\build\native\Microsoft.ReactNative.targets')" />
     <Import Project="..\packages\Microsoft.ReactNative.Cxx\0.67.2\build\native\Microsoft.ReactNative.Cxx.targets"
         Condition="Exists('..\packages\Microsoft.ReactNative.Cxx\0.67.2\build\native\Microsoft.ReactNative.Cxx.targets')" />
@@ -184,6 +184,6 @@
     <Error Condition="!Exists('$(SolutionDir)\packages\ReactNative.Hermes.Windows\0.10.0-ms.1\build\native\ReactNative.Hermes.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\ReactNative.Hermes.Windows\0.10.0-ms.1\build\native\ReactNative.Hermes.Windows.targets'))" />
     <Error Condition="!Exists('$(SolutionDir)\packages\$(WinUIPackageName)\$(WinUIPackageVersion)\build\native\$(WinUIPackageName).targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\$(WinUIPackageName)\$(WinUIPackageVersion)\build\native\$(WinUIPackageName).targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.ReactNative\0.67.2\build\native\Microsoft.ReactNative.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ReactNative\0.67.2\build\native\Microsoft.ReactNative.targets'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.ReactNative\Cxx.0.67.2\build\native\Microsoft.ReactNative.Cxx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ReactNative.Cxx\0.67.2\build\native\Microsoft.ReactNative.Cxx.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ReactNative\Cxx\0.67.2\build\native\Microsoft.ReactNative.Cxx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ReactNative.Cxx\0.67.2\build\native\Microsoft.ReactNative.Cxx.targets'))" />
   </Target>
 </Project>
